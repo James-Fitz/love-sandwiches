@@ -1,6 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from pprint import pprint
 
 
 SCOPE = [
@@ -27,7 +26,7 @@ def get_sales_data():
         print("Data should be 6 numbers separated by commas.")
         print("Example: 22,31,17,24,20,29\n")
 
-        data_str = input("Enter your data here: ")
+        data_str = input("Enter your data here:\n")
         
         sales_data = data_str.split(",")
         
